@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eating and Dietary Habits Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+
+    <h1 id="title">Eating and Dietary Habits Survey</h1>
+    <p id="description">Please take a few minutes of your time to fill in the following survey.</p>
+
+    <form action="" id="survey-form">
+       
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+    
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" name="age" min="21" max="35" placeholder="Enter your age" required><br><br>
+
+     
+        <label for="dropdown">What does your main meal consist of?</label>
+        <select id="dropdown" name="meal-type" required>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="other">Other..</option>
+        </select><br><br>
+
+      
+        <label>How is your main meal prepared?</label><br>
+        <input type="radio" name="meal-preference" value="Freshly home-cooked produce" required> Freshly home-cooked produce<br>
+        <input type="radio" name="meal-preference" value="Restaurant meal" required> Restaurant meal<br>
+        <input type="radio" name="meal-preference" value="Pre-cooked or microwave dinners" required> Pre-cooked or microwave dinners<br><br>
+
+     
+        <label for="bmi">Do you know your current BMI (Body Mass Index)?</label><br>
+        <input type="checkbox" name="bmi" value="Less than 18.5 (Underweight)"> Less than 18.5 (Underweight)<br>
+        <input type="checkbox" name="bmi" value="18.5-25 (Ideal weight)"> 18.5-25 (Ideal weight)<br>
+        <input type="checkbox" name="bmi" value="25-30 (Overweight)"> 25-30 (Overweight)<br>
+        <input type="checkbox" name="bmi" value="More than 40 (Morbidly obese)"> More than 40 (Morbidly obese)<br><br>
+
+       
+        <label for="comments">Have you been avoiding some foods? Why?</label><br>
+        <textarea id="comments" name="comments" placeholder="Enter your comment here"></textarea><br><br>
+
+       
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+
+</div>
+   
+</body>
+</html>
